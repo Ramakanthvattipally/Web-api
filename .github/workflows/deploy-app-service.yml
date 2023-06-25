@@ -3,7 +3,7 @@ name: .NET Core
 on: [push]
 
 env:
-  AZURE_WEBAPP_NAME: linuxappservice06252023 # set this to your application's name
+  AZURE_WEBAPP_NAME: ramalinuxappservice06252023 # set this to your application's name
   AZURE_WEBAPP_PACKAGE_PATH: "." # set this to the path to your web app project, defaults to the repository root
   DOTNET_VERSION: "6.0.x" # set this to the dot net version to use
 
@@ -14,7 +14,7 @@ jobs:
     env:
       ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}
       ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
-      ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION }}
+      ARM_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID}}
       ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
 
     steps:

@@ -12,7 +12,7 @@ resource "azurerm_service_plan" "terraform_app_service_plan" {
 }
 
 resource "azurerm_linux_web_app" "terraform_app_service" {
-  name                = "linuxappservice06252023"
+  name                = "ramalinuxappservice06252023"
   location            = azurerm_resource_group.terraform_app_service_rg.location
   resource_group_name = azurerm_resource_group.terraform_app_service_rg.name
   service_plan_id     = azurerm_service_plan.terraform_app_service_plan.id
