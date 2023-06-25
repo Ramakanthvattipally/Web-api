@@ -1,0 +1,1 @@
+az webapp deploy --resource-group Web-Api1806 --name rama1806 --src-path "E:\DevOps\Web-api\Web-api\UserApi\bin\Release\net7.0\publish\publish.zip" --target-path "/home/site/wwwroot" --type zip
